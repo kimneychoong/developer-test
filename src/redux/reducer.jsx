@@ -1,6 +1,8 @@
+import { act } from 'react-dom/test-utils';
 import {
   ADD_ITEM,
   DELETE_ITEM,
+  SUBMIT_ITEM
 } from './actions';
 
 const INITIAL_STATE = {
@@ -11,16 +13,25 @@ const INITIAL_STATE = {
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ADD_ITEM:
+      let newItem = action.payload;
+      state.wishList.push(newItem)
       return {
-        wishList: ,
+        state,
       };
     case DELETE_ITEM:
+      let deleteItem = action.payload;
+      state.wishList = state.wishList.filter((listItem => deleteItem != listItem))
       return {
-        wishList: ,
+        state,
       };
+    case SUBMIT_ITEM:
+        state.wishList = action.payload
+        return {
+          state
+        };
     default:
       return {
-        wishList: ,
+        state
       };
   }
 };

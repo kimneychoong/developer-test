@@ -1,0 +1,60 @@
+#container{
+    width:400px;
+    height: 540px;
+    box-shadow: 0 0 10px black;
+    background-color: #FFC0CB;
+}
+#container_wishList {
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0 0 3px rgb(0,0,0,0.1);
+    border-radius: 5px;
+    border: 2px solid gray;
+    overflow: scroll;
+}
+#input{
+    width: 300px;
+
+}
+#addButton{
+    width: 100px;
+    box-shadow: 0 0 5px #EE82EE;
+    background-color: #7FFFD4;
+}
+#addButton:hover{
+    cursor: pointer;
+    width: 100px;
+    box-shadow: 0 0 5px #EE82EE;
+    background-color: #7FFFD4
+}
+
+#submitButton{
+    width: 300px;
+    box-shadow: 0 0 5px #EE82EE;
+    background-color: #7FFFD4
+}
+#submitButton:hover{
+    cursor: pointer;
+    width: 300px;
+    box-shadow: 0 0 5px #EE82EE;
+    background-color: #7FFFD4
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #666
+}
+li {
+    background-color:#fff;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+li:nth-child(2n) {
+    background-color: #f7f7f7;
+}
